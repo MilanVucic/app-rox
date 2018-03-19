@@ -30,6 +30,7 @@ var app = express();
 // Serve static assets from the /public folder
 app.use('/public', express.static(path.join(__dirname, '/public')));
 var ParseDashboard = require('parse-dashboard');
+var options = { allowInsecureHTTP: true };
 var dashboard = new ParseDashboard({
   "apps": [
     {
@@ -45,7 +46,7 @@ var dashboard = new ParseDashboard({
        "pass": "trainers2016***"
      }
    ]
-});
+}, options);
 // make the Parse Dashboard available at /dashboard
 app.use('/dashboard', dashboard);
 
