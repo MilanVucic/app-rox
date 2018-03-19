@@ -29,6 +29,25 @@ var app = express();
 
 // Serve static assets from the /public folder
 app.use('/public', express.static(path.join(__dirname, '/public')));
+var ParseDashboard = require('parse-dashboard');
+var dashboard = new ParseDashboard({
+  "apps": [
+    {
+      "serverURL": "https://e-fit.herokuapp.com/parse",
+      "appId": "e-fit",
+      "masterKey": "5BtW7le8MM3zsi9FMtw4",
+      "appName": "E fit",
+    }
+  ],
+  "users": [
+     {
+       "user": "admin",
+       "pass": "trainers2016***"
+     }
+   ]
+});
+// make the Parse Dashboard available at /dashboard
+app.use('/dashboard', dashboard);
 
 // Serve the Parse API on the /parse URL prefix
 var mountPath = process.env.PARSE_MOUNT || '/parse';
