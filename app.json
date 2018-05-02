@@ -11,15 +11,15 @@
     },
     "APP_ID": {
       "description": "A unique identifier for your app.",
-      "value": "e-fit"
+      "value": "app-rox"
     },
     "MASTER_KEY": {
       "description": "A key that overrides all permissions. Keep this secret.",
-      "value": "5BtW7le8MM3zsi9FMtw4"
+      "value": "EhjsSr3E2WkZcJrjwBb7"
     },
     "SERVER_URL": {
       "description": "URL to connect to your Heroku instance (update with your app's name + PARSE_MOUNT)",
-      "value": "http://e-fit.herokuapp.com/parse"
+      "value": "https://app-rox.herokuapp.com/parse"
     }
   },
   "image": "heroku/nodejs",

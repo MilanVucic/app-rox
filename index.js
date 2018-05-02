@@ -34,16 +34,16 @@ var options = { allowInsecureHTTP: true };
 var dashboard = new ParseDashboard({
   "apps": [
     {
-      "serverURL": "https://e-fit.herokuapp.com/parse",
-      "appId": "e-fit",
-      "masterKey": "5BtW7le8MM3zsi9FMtw4",
-      "appName": "E fit",
+      "serverURL": "https://app-rox.herokuapp.com/parse",
+      "appId": "app-rox",
+      "masterKey": "EhjsSr3E2WkZcJrjwBb7",
+      "appName": "AppRox",
     }
   ],
   "users": [
      {
        "user": "admin",
-       "pass": "trainers2016***"
+       "pass": "vuckovasocarevi2018!"
      }
    ]
 }, options);
